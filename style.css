@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start{
+   font-size: 2rem;
+   border-radius: 2rem;
+   padding: 30px;
+   border: 2px solid black;
+   background: rgb(177, 130, 0);
+   color: white;
+   cursor: pointer;
+}
+
+#end{
+    display: none;
+    position: absolute;
+    font-size: 5rem;
+    top: 150px;
+    left: 420px;
+    width:400px;
+    border:none;
+    background: none;
+    cursor:default;
+    text-align: center;
+}
+
+#pause{
+    padding: 10px; 
+    display: none;  
+    border-radius: 1rem;
+    position: absolute;
+    top: 120px;
+    right: 190px; 
+}
+
+#newgame{
+    display: none;  
+    position: absolute;
+    bottom: 180px;
+    left: 550px; 
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    display:none;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 160px;
+    font-size: 39px;
+    font-weight: bold;
+    display: none;
+}
+
+#board{
+    background: linear-gradient(rgb(170, 236, 170),rgb(236, 236, 167));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: none;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(192, 141, 141), rgb(201, 201, 149));
+    border: 2px solid rgb(59, 4, 59);
+    transform: scale(1.01);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+
+#credits{
+    display:none;
+}
