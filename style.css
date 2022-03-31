@@ -104,3 +104,10 @@
 #credits{
     display:none;
 }
+
+#credits a img{
+    width:2vw;
+    height:4vh;
+    margin-left:2px;
+    margin-right:2px;
+}
